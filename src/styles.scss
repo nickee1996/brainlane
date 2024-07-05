@@ -1,0 +1,142 @@
+/* Variables */
+$white: #fff;
+$accent: #f6f5f5;
+$blue: #1a2762;
+$blue-accent: #dedee5;
+$green: #81b761;
+$gold: #bca268;
+$dark-grey: #777;
+$light-grey: #ddd;
+
+
+/* Generals */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* Colors */
+.c-blue { color: $blue; }
+.c-green { color: $green; }
+.c-grey { color: $dark-grey; }
+.c-light-grey { color: $light-grey; }
+.c-gold { color: $gold; }
+
+
+/* background-colors */
+.bc-accent { background-color: $accent; }
+
+
+/* Layout */
+.container {
+  width: 1100px;
+  padding: 0 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+
+.section-title {
+  font-size: 2.2rem;
+  font-family: "Noto Serif TC", serif;
+  font-weight: 500;
+  text-align: center;
+  margin: 60px 0;
+}
+
+.section-hr {
+  max-width: 20vw;
+  min-width: 200px;
+  border-color: $white;
+  margin: 40px auto;
+}
+
+.round-button {
+  color: $blue;
+  text-decoration: none;
+  background-color: $blue-accent;
+  padding: 10px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: navy;
+  font-size: 18px;
+  margin: 0 5px;
+  transition: all 0.2s;
+
+  &.large {
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+  }
+
+  &:hover {
+    background-color: $blue;
+    color: $white;
+    transform: scale(1.1);
+  }
+}
+
+
+.button {
+  padding: 15px 30px;
+  transition: all 0.2s;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &.green {
+    background-color: $green;
+    color: $white;
+    border: none;
+    border-radius: 4px;
+    &:hover {
+      background-color: darken($green, 10%);
+    }
+  }
+
+  &.gold {
+    background-color: $gold;
+    color: $white;
+    border: none;
+    border-radius: 4px;
+    white-space: nowrap;
+    text-align: center;
+    &:hover {
+      background-color: darken($gold, 10%);
+    }
+  }
+
+  &.outline {
+    border: 1px solid $dark-grey;
+    color: $dark-grey;
+    background-color: transparent;
+    border-radius: 4px;
+
+    &.outline-white {
+      border-color: $white;
+      color: $white;
+    }
+
+    &:hover {
+      background-color: $dark-grey;
+      color: $white;
+    }
+  }
+
+}

@@ -1,0 +1,78 @@
+@import "../../../styles.scss";
+
+.logo {
+  img { max-height: 40px; }
+}
+
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 40px 0;
+  gap: 20px;
+
+  .footer-box {
+
+    h4 {
+      font-size: 1rem;
+      margin: 20px 0;
+      color: $blue;
+    }
+
+    p {
+      font-size: 0.8rem;
+      color: $dark-grey;
+    }
+
+    i { margin-right: 10px; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin: 10px 0;
+        font-size: 0.8rem;
+        a {
+          text-decoration: none;
+          color: $dark-grey;
+        }
+      }
+    }
+  }
+
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.footer-extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  .right-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
