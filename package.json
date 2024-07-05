@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "github_build": "ng build --base-href 'https://nickee1996.github.io/brainlane/'",
+    "github_deploy": "npx angular-cli-ghpages --dir=dist/brainlane/browser"
   },
   "private": true,
   "dependencies": {
@@ -28,6 +30,7 @@
     "@angular/cli": "^18.0.7",
     "@angular/compiler-cli": "^18.0.0",
     "@types/jasmine": "~5.1.0",
+    "angular-cli-ghpages": "^2.0.1",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
