@@ -1,8 +1,6 @@
 <div class="header">
   <div class="left-buttons">
-      <a class="round-button" href="views/login.php"><i class="fa-brands fa-facebook-f"></i></a>
-      <a class="round-button" href="views/register.php"><i class="fa-brands fa-twitter"></i></a>
-      <a class="round-button" href="views/register.php"><i class="fa-brands fa-instagram"></i></a>
+    <app-brands></app-brands>
   </div>
 
   <div class="logo">
@@ -10,6 +8,7 @@
   </div>
 
   <div class="right-buttons">
-    <a class="round-button large" href="views/register.php"><i class="fas fa-bars"></i></a>
+    <h3 class="c-blue">Menu</h3>
+    <a class="round-button large" href="#" (click)="$event.preventDefault(); toggleMenu()"><i class="fas fa-bars"></i></a>
   </div>
 </div>

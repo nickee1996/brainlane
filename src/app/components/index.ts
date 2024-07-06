@@ -6,3 +6,5 @@ export * from './about';
 export * from './reviews';
 export * from './menucart';
 export * from './footer';
+export * from './side-menu';
+export * from './brands';

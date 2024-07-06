@@ -1,5 +1,8 @@
+
+
+
 <section class="bc-accent center">
-  <app-header class="container"></app-header>
+  <app-header class="container" (menuToggleEmitter)="menuToggle = !menuToggle"></app-header>
 </section>
 
 <section class="center">
@@ -26,3 +29,7 @@
 <section>
   <app-footer></app-footer>
 </section>
+
+<div class="side-menu" [class.open]="menuToggle">
+  <app-side-menu (menuToggle)="menuToggle = !menuToggle"></app-side-menu>
+</div>
