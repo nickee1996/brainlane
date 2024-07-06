@@ -18,4 +18,10 @@
   button { margin-top: 30px; }
 }
 
-
+@media (max-width: 800px) {
+  .reviews {
+    .review {
+      width: 100%;
+    }
+  }
+}

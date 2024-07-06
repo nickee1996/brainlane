@@ -3,6 +3,7 @@
 .banner {
   position: relative;
   height: 80vh;
+  min-height: 650px;
 
   .container {
     padding: 0 !important;
@@ -43,9 +44,7 @@
 
         h1 {
           font-family: "Noto Serif TC", serif;
-          font-size: 3rem;
           font-weight: 500;
-          color: $blue;
           margin-bottom: 20px;
         }
 
@@ -79,6 +78,7 @@
 
   .banner {
     height: 60vh;
+    min-height: unset;
     .intro-section {
       height: 100% !important;
       h1 { font-size: 2rem !important;}
