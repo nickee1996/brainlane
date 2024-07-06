@@ -44,7 +44,7 @@
 
   }
 
-  .text { color: $dark-grey; }
+  .about-text { color: $dark-grey; }
 
   &.text-right {
     grid-template-columns: 2fr 3fr;
@@ -52,7 +52,7 @@
       left: -20px;
       bottom: -20px;
     }
-    .text { padding: 60px 0 60px 60px; }
+    .about-text { padding: 60px 0 60px 60px; }
   }
 
   &.text-left {
@@ -61,7 +61,7 @@
       right: -20px;
       bottom: -20px;
     }
-    .text { padding: 60px 60px 60px 0; }
+    .about-text { padding: 60px 60px 60px 0; }
   }
 
 }
@@ -76,7 +76,7 @@
   .section {
     grid-template-columns: 1fr !important;
 
-    .text { padding: 40px 20px !important; }
+    .about-text { padding: 40px 20px !important; }
     .img-title { font-size: 1.5rem !important; }
 
     &.text-right {
